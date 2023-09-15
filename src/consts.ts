@@ -1,20 +1,20 @@
-export const TODO_Filters = {
+export const TODO_FILTERS = {
     ALL: 'all',
     ACTIVE: 'active',
     COMPLETED: 'completed'
 } as const
 
 export const FILTERS_BUTTONS = [
-    [TODO_Filters.ALL], {
+    [TODO_FILTERS.ALL], {
         literal: 'Todos',
-        href: `/?filter=${TODO_Filters.ALL}`
+        href: `/?filter=${TODO_FILTERS.ALL}`
     },
-    [TODO_Filters.ACTIVE], {
+    [TODO_FILTERS.ACTIVE], {
         literal: 'Activos',
-        href: `/?filter=${TODO_Filters.ACTIVE}`
+        href: `/?filter=${TODO_FILTERS.ACTIVE}`
     },
-    [TODO_Filters.COMPLETED], {
+    [TODO_FILTERS.COMPLETED], {
         literal: 'Completed',
-        href: `/?filter=${TODO_Filters.COMPLETED}`
+        href: `/?filter=${TODO_FILTERS.COMPLETED}`
     }
 ] as const
